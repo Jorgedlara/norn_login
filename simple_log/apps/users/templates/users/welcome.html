@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <title>Bienvenida</title>
+  </head>
+  <body>
+  <h2>Lista de tus inicios de sesion</h2>
+
+  <p>Bienvenido <b>{{request.user.username}}</b>, en esta página puedes ver tus inicios de sesión.</p>
+
+  <hr />
+
+  <table class = 'table table-bordered'>
+    <thead>
+      <tr>
+        <td>#</td>
+        <td>Usuario</td>
+        <td>Nombre</td>
+        <td>Fecha</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{request.user.id}}</td>
+        <td>{{request.user.username}}</td>
+        <td>{{request.user.firs_name}}</td>
+        <td>{{request.user.last_login}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="/logout">Cerrar sesión</a>
+  </body>
+</html>
