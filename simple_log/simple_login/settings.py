@@ -135,4 +135,4 @@ EMAIL_HOST_USER = 'correopruebalogin@gmail.com'
 EMAIL_HOST_PASSWORD = 'qRk#!^DXSt3F'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-LOGIN_URL = 'login'
+

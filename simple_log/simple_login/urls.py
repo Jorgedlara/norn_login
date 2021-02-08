@@ -26,6 +26,5 @@ urlpatterns = [
         {'template_name': 'password_reset_confirm.html'},
         name='password_reset_confirm'
         ),
-    path('reset/done', PasswordResetCompleteView.as_view(), {'redirect_to_login': 'users/login.html'},
-        name='password_reset_complete'),
+    path('reset/done',PasswordResetCompleteView.as_view(template_name='registration/password_reset_complete.html') , name = 'password_reset_complete'),
 ]
