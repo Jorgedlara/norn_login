@@ -6,11 +6,11 @@ Se trata de una aplicación web para hacer login, logout, registrar un usuario, 
 
 ### Tecnologías usadas
 
-Para construir esta aplicación utilicé Django, un framewokr construido en python, por su simplicidad y velocidad para diseñar aplicaciones desde 0, conectado a una base de datos PotgreSLQ. 
+Para construir esta aplicación utilicé Django, un framework construido en python, por su simplicidad y velocidad para diseñar aplicaciones desde 0, conectado a una base de datos PotgreSLQ. 
 
 ### Arquitectura
 
-Se utilizó la arquitectura MTV propia del framework, para separar los modelos, los templates y la lógica de la aplicación, los modelos utilizamos para hacer login fueron los propios que nos proporciona Django, muy útiles ya que consideran la seguridad en cuanto a validaciones y tokens de acceso. Para la lógica de las aplicaciones se utilizaron tanto vistas basadas en funciones como vistas basadas en clases. 
+Se utilizó la arquitectura MTV propia del framework, para separar los modelos, los templates y la lógica de la aplicación, los modelos utilizados para hacer login fueron los propios que nos proporciona Django, muy útiles ya que consideran la seguridad en cuanto a validaciones y tokens de acceso. Para la lógica de las aplicaciones se utilizaron tanto vistas basadas en funciones como vistas basadas en clases. 
 
 ### Instalar el proyecto 
 
