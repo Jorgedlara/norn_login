@@ -5,16 +5,19 @@ class RegistroForm(UserCreationForm):
 
     class Meta:
         model = User
-        fiels = [
-            'username',
-            'fisrt_name',
-            'last_name',
-            'email',
+        fields = [
+                'username',
+                'first_name',
+                'last_name',
+                'email',
         ]
 
-        labels = [
-            'Nombre de usuario',
-            'Nombre',
-            'Apellidos',
-            'Correo electronico',
-        ]
+        labels = {
+                'username': 'Nombre de usuario',
+                'first_name': 'Nombre',
+                'last_name': 'Apellidos',
+                'email': 'Correo electronico',
+        }
+
+ 
+  

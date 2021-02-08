@@ -4,6 +4,7 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth import login as do_login
 from django.contrib.auth import logout as do_logout
 from django.contrib.auth.models import User
+from apps.users.forms import RegistroForm
 
 
 def welcome(request):
@@ -19,10 +20,10 @@ def welcome(request):
 
 def register(request):
     # Creamos el formulario de autenticación vacío
-    form = UserCreationForm()
+    form = RegistroForm()
     if request.method == "POST":
         # Añadimos los datos recibidos al formulario
-        form = UserCreationForm(data=request.POST)
+        form = RegistroForm(data=request.POST)
         # Si el formulario es válido...
         if form.is_valid():
 
@@ -76,3 +77,4 @@ def logout(request):
     do_logout(request)
     # Redireccionamos a la portada
     return redirect('/')
+

@@ -18,13 +18,13 @@
   <form method="POST">
     {{ form.as_p }}
     {% csrf_token %}
-    <button type="submit">Login</button>
+    <button class="btn btn-primary type="submit">Login</button>
   </form>
 
   <hr />
   
   <a href="/register">Registrar usuario</a>
-  <a href="/remember">Olvide mi contraseña</a>
+  <a href="/reset/password_reset">Olvide mi contraseña</a>
 
   <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
   <!-- <script src = "{% static 'js/bootstrap.min.js' %}"></script> -->
